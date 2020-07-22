@@ -62,7 +62,7 @@ def main(args):
 
     # badges only user2 have
     badges1 = sorted(list(set(user2_badges) - set(user1_badges)))
-    print(f"\n[+] {user1} is missing these {len(badges1)} badges that {user2} already have:\n")
+    print(f"\n[+] {user1} is missing this {len(badges1)} badges that {user2} already have:\n")
 
     if badges1:
         print(", ".join(badges1))
@@ -71,7 +71,7 @@ def main(args):
 
     # badges only user1 have
     badges2 = sorted(list(set(user1_badges) - set(user2_badges)))
-    print(f"\n[+] {user2} is missing these {len(badges2)} badges that {user1} already have:\n")
+    print(f"\n[+] {user2} is missing this {len(badges2)} badges that {user1} already have:\n")
     
     if badges2:
         print(", ".join(badges2))
